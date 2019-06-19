@@ -1,0 +1,19 @@
+[gd_scene format=2]
+
+[node name="SideBumper" type="Node2D"]
+
+[node name="Bumper" type="StaticBody2D" parent="." groups=[
+"bumpers",
+]]
+position = Vector2( -6.05005, -12.4331 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bumper"]
+position = Vector2( 1.21749, 14.204 )
+polygon = PoolVector2Array( -55.9561, -1.24423, 20.069, -44.9384, 14.658, -32.3577, -34.312, -3.13809 )
+
+[node name="Frame" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Frame"]
+position = Vector2( -69.1661, -37.2849 )
+polygon = PoolVector2Array( 82.644, -1.68903, 15.2765, 37.2705, 69.2516, 36.9999 )
+
