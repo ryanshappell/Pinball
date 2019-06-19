@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Ball.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Flipper.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Plunger.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Bumper.tscn" type="PackedScene" id=4]
+
+[node name="Main" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 0, -92.0802 )
+offset = Vector2( 0, 100 )
+current = true
+
+[node name="Ball" parent="." instance=ExtResource( 1 )]
+position = Vector2( 170.206, 2.56686 )
+mass = 5.0
+continuous_cd = 0
+
+[node name="FlipperLeft" parent="." instance=ExtResource( 2 )]
+position = Vector2( -56.461, 126.484 )
+rotation = 3.60061
+trigger = "ui_left"
+direction = -1
+
+[node name="FlipperRight" parent="." instance=ExtResource( 2 )]
+position = Vector2( 57.6064, 123.014 )
+rotation = -0.523599
+trigger = "ui_right"
+direction = 1
+
+[node name="Wall" type="StaticBody2D" parent="."]
+position = Vector2( 0, -92.0802 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wall"]
+position = Vector2( -28.2379, -2.99586 )
+polygon = PoolVector2Array( -130, -149.46, -131.762, 302.996, 178.238, 302.996, 239.237, 303.075, 238.238, -154.924, 208.364, -207.931, 173.224, -222.383, -17.226, -232.136, -91.1471, -225.976, -108.087, -142.815, 114.703, -214.169, 173.224, -211.089, 198.612, -197.661, 209.556, -177.742, 218.238, -154.924, 218.238, 285.076, 178.238, 285.076, 178.238, -154.924, 158.238, -154.924, 158.238, 152.996, 83.0437, 211.463, 68.2379, 282.996, -11.7621, 282.996, -26.9846, 213.846, -111.762, 152.996, -113.859, -106.302, -110, -149.46 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Wall"]
+position = Vector2( -1.70636, 5.688 )
+polygon = PoolVector2Array( 81.8098, 99.4725, 43.1315, 168.866, 89.2043, 139.857 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Wall"]
+position = Vector2( -131.393, 6.25679 )
+scale = Vector2( 1.08091, 1.02876 )
+polygon = PoolVector2Array( 36.7455, 134.289, 75.1596, 160.705, 43.5863, 95.5863 )
+
+[node name="Plunger" parent="." instance=ExtResource( 3 )]
+position = Vector2( 169.494, 161.56 )
+
+[node name="Bumper" parent="." instance=ExtResource( 4 )]
+position = Vector2( 117, -273 )
+
