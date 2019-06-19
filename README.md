@@ -1,2 +1,2 @@
 # Pinball
-Simple pinbal rendition in Godot
+Simple pinball rendition in Godot
