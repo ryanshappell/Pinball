@@ -49,11 +49,11 @@ position = Vector2( 57.9068, -126.565 )
 position = Vector2( -10.5142, -188.67 )
 
 [node name="SideBumper" parent="." instance=ExtResource( 5 )]
-position = Vector2( 97.0582, 51.6803 )
-rotation = -0.633358
+position = Vector2( 64.0679, 42.0107 )
+rotation = -0.2515
 
 [node name="SideBumper2" parent="." instance=ExtResource( 5 )]
-position = Vector2( -95.7978, 52.9408 )
-rotation = -2.50122
+position = Vector2( -62.8075, 40.996 )
+rotation = -2.92777
 scale = Vector2( 1, -1 )
 
