@@ -16,7 +16,7 @@ func _ready():
 
 func _physics_process(delta):
 	if (Input.is_action_pressed(trigger)):
-		desiredRotation = startRotation + deg2rad(direction * 45.0)
+		desiredRotation = startRotation + deg2rad(direction * 60.0)
 	else:
 		desiredRotation = startRotation
 	rotation = lerp(rotation, desiredRotation, 0.3)

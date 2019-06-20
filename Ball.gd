@@ -13,4 +13,4 @@ func _physics_process(delta):
 	
 func _integrate_forces(state):
 	if (state.get_contact_count() > 0 && (state.get_contact_collider_object(0) as Node).is_in_group("bumpers")):
-		apply_impulse(Vector2(0, 0), 800 * state.get_contact_local_normal(0))
+		apply_impulse(Vector2(0, 0), 1000 * state.get_contact_local_normal(0))

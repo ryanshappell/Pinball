@@ -4,14 +4,17 @@
 [ext_resource path="res://art/ball.png" type="Texture" id=2]
 
 [sub_resource type="PhysicsMaterial" id=1]
-bounce = 0.5
+friction = 2.0
+bounce = 0.2
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 10.8708
 
 [node name="Ball" type="RigidBody2D"]
+mass = 5.0
 physics_material_override = SubResource( 1 )
 gravity_scale = 4.0
+continuous_cd = 2
 contacts_reported = 1
 contact_monitor = true
 script = ExtResource( 1 )
