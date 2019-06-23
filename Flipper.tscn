@@ -1,10 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Flipper.gd" type="Script" id=1]
 [ext_resource path="res://art/flipper.png" type="Texture" id=2]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 40.6985, 10 )
 
 [node name="Flipper" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -13,13 +10,9 @@ script = ExtResource( 1 )
 position = Vector2( -26.8808, -0.440735 )
 texture = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-shape = SubResource( 1 )
-
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( 19.7675, 18.0061 )
 rotation = 0.261799
 scale = Vector2( 1.02742, 0.923252 )
-polygon = PoolVector2Array( -80.4434, -2.18544, -82.1782, 0.00638962, -82.5224, 3.39552, -81.5487, 5.68742, -78.2735, 7.31186, -19.5449, -4.08727, -16.0411, -7.85955, -13.9539, -13.6464, -15.1668, -18.684, -17.2829, -21.3395, -20.9998, -23.6351, -24.5468, -23.4047 )
+polygon = PoolVector2Array( -81.3369, -2.48488, -82.6394, -0.098403, -83.5109, 1.70544, -82.2732, 5.15094, -80.5298, 6.62919, -78.3554, 7.52481, -19.5449, -4.08727, -16.5047, -7.10336, -14.7915, -10.1572, -13.8916, -13.8768, -15.1668, -18.684, -17.2829, -21.3395, -20.9998, -23.6351, -24.4596, -24.3026 )
 

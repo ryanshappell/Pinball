@@ -14,12 +14,12 @@ position = Vector2( -6.05005, -12.4331 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bumper"]
 position = Vector2( 19.2043, 42.7621 )
-polygon = PoolVector2Array( -44.0177, 5.0584, -36.3721, -6.22901, 11.6915, -70.0996, 15.2898, -72.2843, 18.5026, -72.0273, 16.3179, -61.4893, -29.9465, 0.710657, -43.6515, 11.0407 )
+polygon = PoolVector2Array( -43.9363, 4.02688, -36.9456, -6.27015, 11.0904, -69.7903, 14.6802, -71.9442, 18.0007, -72.2134, 16.3179, -61.4893, -29.9465, 0.710657, -43.7473, 9.97839 )
 
 [node name="Frame" type="StaticBody2D" parent="."]
 position = Vector2( -1.10184, 0.550915 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Frame"]
 position = Vector2( -20.3712, -27.6092 )
-polygon = PoolVector2Array( 54.1179, -16.7279, -11.5153, 70.8129, 54.2602, 38.5217 )
+polygon = PoolVector2Array( 54.1179, -16.7279, 51.9512, -15.7637, -12.193, 69.4242, -11.6814, 70.7883, 54.3932, 37.8789 )
 

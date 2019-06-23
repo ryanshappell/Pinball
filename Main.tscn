@@ -1,52 +1,52 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Flipper.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Plunger.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Bumper.tscn" type="PackedScene" id=3]
-[ext_resource path="res://SideBumper.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Ball.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Level.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Flipper.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Plunger.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Bumper.tscn" type="PackedScene" id=4]
+[ext_resource path="res://SideBumper.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Ball.tscn" type="PackedScene" id=6]
 
 [node name="Main" type="Node"]
+
+[node name="Level" parent="." instance=ExtResource( 1 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 3.70117, -3.25125 )
 current = true
 
-[node name="FlipperLeft" parent="." instance=ExtResource( 1 )]
-position = Vector2( -88.0094, 265.087 )
+[node name="FlipperLeft" parent="." instance=ExtResource( 2 )]
+position = Vector2( -96.613, 260.427 )
 rotation = 3.60061
 trigger = "ui_left"
 direction = -1
 
-[node name="FlipperRight" parent="." instance=ExtResource( 1 )]
-position = Vector2( 73.824, 264.42 )
+[node name="FlipperRight" parent="." instance=ExtResource( 2 )]
+position = Vector2( 74.1825, 259.401 )
 rotation = -0.523599
 trigger = "ui_right"
 direction = 1
 
-[node name="Plunger" parent="." instance=ExtResource( 2 )]
-position = Vector2( 229.374, 320.319 )
+[node name="Plunger" parent="." instance=ExtResource( 3 )]
+position = Vector2( 225.331, 318.416 )
 
-[node name="Bumper" parent="." instance=ExtResource( 3 )]
+[node name="Bumper" parent="." instance=ExtResource( 4 )]
 position = Vector2( 58.9943, -126.264 )
 
-[node name="Bumper2" parent="." instance=ExtResource( 3 )]
+[node name="Bumper2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 108.446, -204.179 )
 
-[node name="Bumper3" parent="." instance=ExtResource( 3 )]
+[node name="Bumper3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 14.7556, -209.427 )
 
-[node name="SideBumper" parent="." instance=ExtResource( 4 )]
+[node name="SideBumper" parent="." instance=ExtResource( 5 )]
 position = Vector2( 111.541, 170.44 )
 
-[node name="SideBumper2" parent="." instance=ExtResource( 4 )]
+[node name="SideBumper2" parent="." instance=ExtResource( 5 )]
 position = Vector2( -120.815, 171.897 )
 rotation = -3.14159
 scale = Vector2( 1, -1 )
 
-[node name="Ball" parent="." instance=ExtResource( 5 )]
-position = Vector2( 229.266, 231.231 )
-
-[node name="Level" parent="." instance=ExtResource( 6 )]
+[node name="Ball" parent="." instance=ExtResource( 6 )]
+position = Vector2( 225.305, 230.351 )
 

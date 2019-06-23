@@ -3,7 +3,7 @@
 [ext_resource path="res://art/bumper.png" type="Texture" id=1]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 17.9854
+radius = 17.6191
 height = 7.53377
 
 [node name="Bumper" type="StaticBody2D" groups=[

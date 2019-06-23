@@ -5,13 +5,13 @@
 
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 2.0
-bounce = 0.2
+bounce = 0.3
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 10.8708
+radius = 11.3608
 
 [node name="Ball" type="RigidBody2D"]
-mass = 5.0
+mass = 2.0
 physics_material_override = SubResource( 1 )
 gravity_scale = 4.0
 continuous_cd = 2
@@ -20,6 +20,7 @@ contact_monitor = true
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0.426292, 0.426291 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
